@@ -4,9 +4,10 @@ module.exports = {
         es2021: true,
     },
     extends: [
-        // 'plugin:react/recommended',
+        'plugin:react/recommended',
         'airbnb',
         'plugin:react/jsx-runtime',
+        'plugin:i18next/recommended',
     ],
     parser: '@typescript-eslint/parser',
     parserOptions: {
@@ -19,6 +20,7 @@ module.exports = {
     plugins: [
         'react',
         '@typescript-eslint',
+        'i18next',
     ],
     rules: {
         indent: [2, 4],
@@ -37,7 +39,8 @@ module.exports = {
         'no-shadow': 'off',
         'import/no-extraneous-dependencies': 'warn',
         'no-underscore-dangle': 'off',
-        'no-unused-vars': 'warn'
+        'no-unused-vars': 'warn',
+        'i18next/no-literal-string': ['error', { markupOnly: true }],
     },
     globals: {
         __IS_DEV__: true,
