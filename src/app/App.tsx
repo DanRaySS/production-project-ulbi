@@ -5,7 +5,6 @@ import { Sidebar } from 'widgets/Sidebar';
 import { AppRouter } from './providers/router';
 import { useTheme } from './providers/ThemeProvider';
 
-
 import './styles/index.scss';
 
 function App() {
