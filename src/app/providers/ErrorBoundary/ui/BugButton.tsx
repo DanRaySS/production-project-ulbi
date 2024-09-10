@@ -7,6 +7,7 @@ interface IBugButtonProps {
 }
 
 // Компонент для тестирования ErrorBoundary
+// eslint-disable-next-line no-unused-vars
 export const BugButton = ({ className }: IBugButtonProps) => {
     const [error, setError] = useState(false);
     const { t } = useTranslation();
